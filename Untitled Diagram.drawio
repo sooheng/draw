@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-11T05:42:51.520Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36 Edg/96.0.1054.53" etag="vqK5USoz_hy9inmDyDsP" version="16.5.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-02-11T05:50:24.588Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36 Edg/96.0.1054.53" etag="Xdk2nRVHxyB_M5s9CG41" version="16.5.5" type="github" pages="2">
   <diagram id="_4FzIXOv0z3ntkziVuJd" name="Page-1">
     <mxGraphModel dx="1038" dy="631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -74,10 +74,41 @@
     </mxGraphModel>
   </diagram>
   <diagram id="J1mdc2Zx9R3JM9_mr8Q6" name="Page-2">
-    <mxGraphModel dx="1038" dy="631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1865" dy="631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="18zXzb1ebCS6UaKwB3qj-0" />
         <mxCell id="18zXzb1ebCS6UaKwB3qj-1" parent="18zXzb1ebCS6UaKwB3qj-0" />
+        <mxCell id="qG6T1yPirw11XDM6a6Ei-0" value="前端" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="18zXzb1ebCS6UaKwB3qj-1">
+          <mxGeometry x="-60" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qG6T1yPirw11XDM6a6Ei-1" value="webctl&lt;br&gt;根据访问的header里的信息，向k8s-api请求不同的sa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="18zXzb1ebCS6UaKwB3qj-1">
+          <mxGeometry x="280" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qG6T1yPirw11XDM6a6Ei-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="18zXzb1ebCS6UaKwB3qj-1" source="qG6T1yPirw11XDM6a6Ei-0" target="qG6T1yPirw11XDM6a6Ei-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qG6T1yPirw11XDM6a6Ei-3" value="带着keystone的鉴权信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qG6T1yPirw11XDM6a6Ei-2">
+          <mxGeometry x="0.16" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qG6T1yPirw11XDM6a6Ei-4" value="k8s-api" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="18zXzb1ebCS6UaKwB3qj-1">
+          <mxGeometry x="610" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qG6T1yPirw11XDM6a6Ei-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="18zXzb1ebCS6UaKwB3qj-1" source="qG6T1yPirw11XDM6a6Ei-4" target="qG6T1yPirw11XDM6a6Ei-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qG6T1yPirw11XDM6a6Ei-6" value="从secret获得token" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qG6T1yPirw11XDM6a6Ei-5">
+          <mxGeometry x="0.2817" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
